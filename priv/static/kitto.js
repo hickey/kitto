@@ -51,6 +51,11 @@ class Kitto {
       config.columns = 5;
     }
 
+    if (resolution == "800") {
+      config.widget_base_dimensions = [180, 216];
+      config.columns = 4;
+    }
+
     config.content_width =
       (config.widget_base_dimensions[0] +
        config.widget_margins[0] * 2) * config.columns;
